@@ -10,6 +10,10 @@ import UIKit
 import ObjectMapper
 import SwiftyJSON
 
+protocol BookListInteractorProtocol {
+    func didRecieveBookList(books: [LBBookObject])
+}
+
 private let _sharedInstance = LBBookListInteractor()
 
 public class LBBookListInteractor {
@@ -19,6 +23,8 @@ public class LBBookListInteractor {
     static var sharedInstance: LBBookListInteractor {
         return _sharedInstance
     }
+    
+    var delegate: BookListInteractorProtocol?
     
     fileprivate let networkWrapper = NetworkWrapper.sharedInstance
     fileprivate var booksArray = [LBBookObject]()
@@ -36,6 +42,8 @@ public class LBBookListInteractor {
                 print(_tmpBooks.name ?? "ERROR")
                 self.booksArray.append(_tmpBooks)
             }
+            
+            self.delegate?.didRecieveBookList(books: self.booksArray)
             
         }, onFailure: { (error) in
             print("get feeds")
