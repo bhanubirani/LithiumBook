@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D07FB71F1E728086002CED7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB71E1E728086002CED7B /* AppDelegate.swift */; };
-		D07FB7211E728086002CED7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7201E728086002CED7B /* ViewController.swift */; };
 		D07FB7241E728086002CED7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7221E728086002CED7B /* Main.storyboard */; };
 		D07FB7261E728086002CED7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7251E728086002CED7B /* Assets.xcassets */; };
 		D07FB7291E728086002CED7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7271E728086002CED7B /* LaunchScreen.storyboard */; };
-		D07FB7311E728132002CED7B /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7301E728132002CED7B /* NetworkWrapper.swift */; };
+		D07FB73C1E72845B002CED7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7341E72845B002CED7B /* AppDelegate.swift */; };
+		D07FB73D1E72845B002CED7B /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7371E72845B002CED7B /* NetworkWrapper.swift */; };
+		D07FB73E1E72845B002CED7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB73B1E72845B002CED7B /* ViewController.swift */; };
+		D07FB7401E7284A9002CED7B /* LBBookListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB73F1E7284A9002CED7B /* LBBookListInteractor.swift */; };
+		D07FB7421E728502002CED7B /* LBCharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7411E728502002CED7B /* LBCharacterListInteractor.swift */; };
+		D07FB7441E72879C002CED7B /* LBRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7431E72879C002CED7B /* LBRequestRouter.swift */; };
 		D10E7AC7A5412216D9058FD6 /* Pods_LithiumBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6087150411A4A901186BDE1D /* Pods_LithiumBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +24,16 @@
 		84EBB31AD9842FE2775A75A7 /* Pods-LithiumBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LithiumBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook.release.xcconfig"; sourceTree = "<group>"; };
 		A0C95E6FFA2A792FDE9F5ED2 /* Pods-LithiumBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LithiumBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook.debug.xcconfig"; sourceTree = "<group>"; };
 		D07FB71B1E728086002CED7B /* LithiumBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LithiumBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D07FB71E1E728086002CED7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D07FB7201E728086002CED7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D07FB7231E728086002CED7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D07FB7251E728086002CED7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07FB7281E728086002CED7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07FB72A1E728086002CED7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D07FB7301E728132002CED7B /* NetworkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
+		D07FB7341E72845B002CED7B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D07FB7371E72845B002CED7B /* NetworkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
+		D07FB73B1E72845B002CED7B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D07FB73F1E7284A9002CED7B /* LBBookListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBBookListInteractor.swift; sourceTree = "<group>"; };
+		D07FB7411E728502002CED7B /* LBCharacterListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCharacterListInteractor.swift; sourceTree = "<group>"; };
+		D07FB7431E72879C002CED7B /* LBRequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBRequestRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +69,66 @@
 		D07FB71D1E728086002CED7B /* LithiumBook */ = {
 			isa = PBXGroup;
 			children = (
-				D07FB7301E728132002CED7B /* NetworkWrapper.swift */,
-				D07FB71E1E728086002CED7B /* AppDelegate.swift */,
-				D07FB7201E728086002CED7B /* ViewController.swift */,
+				D07FB7331E72845B002CED7B /* Classes */,
 				D07FB7221E728086002CED7B /* Main.storyboard */,
 				D07FB7251E728086002CED7B /* Assets.xcassets */,
 				D07FB7271E728086002CED7B /* LaunchScreen.storyboard */,
 				D07FB72A1E728086002CED7B /* Info.plist */,
 			);
 			path = LithiumBook;
+			sourceTree = "<group>";
+		};
+		D07FB7331E72845B002CED7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D07FB7341E72845B002CED7B /* AppDelegate.swift */,
+				D07FB7351E72845B002CED7B /* BusinessLogic */,
+				D07FB7361E72845B002CED7B /* Managers */,
+				D07FB7381E72845B002CED7B /* Models */,
+				D07FB7391E72845B002CED7B /* Network */,
+				D07FB73A1E72845B002CED7B /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D07FB7351E72845B002CED7B /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				D07FB73F1E7284A9002CED7B /* LBBookListInteractor.swift */,
+				D07FB7411E728502002CED7B /* LBCharacterListInteractor.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		D07FB7361E72845B002CED7B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D07FB7371E72845B002CED7B /* NetworkWrapper.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D07FB7381E72845B002CED7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D07FB7391E72845B002CED7B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D07FB7431E72879C002CED7B /* LBRequestRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D07FB73A1E72845B002CED7B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D07FB73B1E72845B002CED7B /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D45C90561D89783ABD944E8B /* Frameworks */ = {
@@ -120,6 +177,7 @@
 		D07FB7131E728086002CED7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LB;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "MB Corp";
@@ -174,7 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C0D35C3393AB114A8D780EFD /* [CP] Embed Pods Frameworks */ = {
@@ -214,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07FB7211E728086002CED7B /* ViewController.swift in Sources */,
-				D07FB7311E728132002CED7B /* NetworkWrapper.swift in Sources */,
-				D07FB71F1E728086002CED7B /* AppDelegate.swift in Sources */,
+				D07FB73E1E72845B002CED7B /* ViewController.swift in Sources */,
+				D07FB7401E7284A9002CED7B /* LBBookListInteractor.swift in Sources */,
+				D07FB73D1E72845B002CED7B /* NetworkWrapper.swift in Sources */,
+				D07FB73C1E72845B002CED7B /* AppDelegate.swift in Sources */,
+				D07FB7441E72879C002CED7B /* LBRequestRouter.swift in Sources */,
+				D07FB7421E728502002CED7B /* LBCharacterListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +321,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -309,6 +371,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -337,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0C95E6FFA2A792FDE9F5ED2 /* Pods-LithiumBook.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LithiumBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -351,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84EBB31AD9842FE2775A75A7 /* Pods-LithiumBook.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LithiumBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -380,6 +445,7 @@
 				D07FB72F1E728086002CED7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
