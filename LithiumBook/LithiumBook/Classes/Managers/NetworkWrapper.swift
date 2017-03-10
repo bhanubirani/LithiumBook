@@ -39,7 +39,6 @@ class NetworkWrapper {
     func getCharacters(id: String,
                        onSuccess: @escaping (Any)->(),
                        onFailure: @escaping (Error)->()) {
-        print(id)
         let _url: URLRequestConvertible = LBRequestRouter.Router.getBookDetails(id: id)
         restClient.makeRequest(url: _url, onSuccess: onSuccess, onFailure: onFailure)
     }

@@ -19,7 +19,8 @@ class LBCharactersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(bookObject.name ?? "ERROR")
+        self.title = "Characters"
+        self.scharsTV.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {

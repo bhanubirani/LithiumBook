@@ -18,6 +18,9 @@ class LBBooksListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Books"
+        self.bookListTV.tableFooterView = UIView()
+        
         bookListInteractor.delegate = self
         bookListInteractor.fetchBooks()
     }
@@ -54,6 +57,7 @@ extension LBBooksListViewController: UITableViewDelegate, UITableViewDataSource 
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.pushBookDetail(book: (self.bookList?[indexPath.row])!)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
