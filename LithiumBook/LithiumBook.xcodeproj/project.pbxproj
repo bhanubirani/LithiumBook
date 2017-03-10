@@ -18,6 +18,7 @@
 		D07FB7441E72879C002CED7B /* LBRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7431E72879C002CED7B /* LBRequestRouter.swift */; };
 		D07FB7461E729A35002CED7B /* LBBookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7451E729A35002CED7B /* LBBookObject.swift */; };
 		D07FB7481E729D90002CED7B /* LBBooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7471E729D90002CED7B /* LBBooksListViewController.swift */; };
+		D07FB74A1E72A30C002CED7B /* LBCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7491E72A30C002CED7B /* LBCharactersViewController.swift */; };
 		D10E7AC7A5412216D9058FD6 /* Pods_LithiumBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6087150411A4A901186BDE1D /* Pods_LithiumBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		D07FB7431E72879C002CED7B /* LBRequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBRequestRouter.swift; sourceTree = "<group>"; };
 		D07FB7451E729A35002CED7B /* LBBookObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBBookObject.swift; sourceTree = "<group>"; };
 		D07FB7471E729D90002CED7B /* LBBooksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBBooksListViewController.swift; sourceTree = "<group>"; };
+		D07FB7491E72A30C002CED7B /* LBCharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCharactersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				D07FB73B1E72845B002CED7B /* ViewController.swift */,
 				D07FB7471E729D90002CED7B /* LBBooksListViewController.swift */,
+				D07FB7491E72A30C002CED7B /* LBCharactersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				D07FB73E1E72845B002CED7B /* ViewController.swift in Sources */,
 				D07FB7481E729D90002CED7B /* LBBooksListViewController.swift in Sources */,
 				D07FB7461E729A35002CED7B /* LBBookObject.swift in Sources */,
+				D07FB74A1E72A30C002CED7B /* LBCharactersViewController.swift in Sources */,
 				D07FB7401E7284A9002CED7B /* LBBookListInteractor.swift in Sources */,
 				D07FB73D1E72845B002CED7B /* NetworkWrapper.swift in Sources */,
 				D07FB73C1E72845B002CED7B /* AppDelegate.swift in Sources */,

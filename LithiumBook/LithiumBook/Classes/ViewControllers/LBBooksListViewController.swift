@@ -22,6 +22,12 @@ class LBBooksListViewController: UIViewController {
         bookListInteractor.fetchBooks()
     }
     
+    func pushBookDetail(book: LBBookObject) {
+        
+        let charVC = self.storyboard?.instantiateViewController(withIdentifier: "LBCharactersViewController") as! LBCharactersViewController
+        charVC.bookObject = book
+        self.navigationController?.pushViewController(charVC, animated: true)
+    }
 }
 
 extension LBBooksListViewController: BookListInteractorProtocol {
@@ -44,6 +50,10 @@ extension LBBooksListViewController: UITableViewDelegate, UITableViewDataSource 
         let book = self.bookList?[indexPath.row]
         cell!.textLabel!.text = book?.name
         return cell!
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.pushBookDetail(book: (self.bookList?[indexPath.row])!)
     }
     
 }
