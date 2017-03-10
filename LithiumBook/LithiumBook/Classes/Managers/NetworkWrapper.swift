@@ -29,10 +29,17 @@ class NetworkWrapper {
     /// - Parameters:
     ///   - onSuccess: success callback
     ///   - onFailure: failure callback
-    func getFeeds(onSuccess:@escaping (NSArray)->(),
-                  onFailure:(NSError)->()) {
+    func getFeeds(onSuccess: @escaping (Any)->(),
+                  onFailure: (NSError)->()) {
         
         let _url: URLRequestConvertible = LBRequestRouter.Router.getBooks
+        restClient.makeRequest(url: _url, onSuccess: onSuccess, onFailure: onFailure)
+    }
+    
+    func getCharacters(id: String,
+                       onSuccess: @escaping (Any)->(),
+                       onFailure: (NSError)->()) {
+        let _url: URLRequestConvertible = LBRequestRouter.Router.getBookDetails(id: id)
         restClient.makeRequest(url: _url, onSuccess: onSuccess, onFailure: onFailure)
     }
 }
@@ -43,7 +50,7 @@ class NetworkWrapper {
 fileprivate class RestClient {
     
     public func makeRequest(url: URLRequestConvertible,
-                            onSuccess: @escaping (NSArray) -> (),
+                            onSuccess: @escaping (Any) -> (),
                             onFailure: (NSError) -> ()
         ) -> Void {
         
@@ -63,8 +70,7 @@ fileprivate class RestClient {
                 switch response.result {
                 case .success:
                     if let result = response.result.value {
-                        let JSON = result as! NSArray
-                        onSuccess(JSON)
+                        onSuccess(result)
                     }
                     break
                 case .failure:

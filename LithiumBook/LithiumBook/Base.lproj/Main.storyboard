@@ -20,9 +20,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iXb-IZ-GJA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iXb-IZ-GJA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Qsy-5U-yIU" style="IBUITableViewCellStyleDefault" id="vZl-ly-hvj">
@@ -50,6 +49,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iXb-IZ-GJA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KwK-La-Mtp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iXb-IZ-GJA" secondAttribute="bottom" id="Mny-d0-tF2"/>
+                            <constraint firstAttribute="trailing" secondItem="iXb-IZ-GJA" secondAttribute="trailing" id="YeT-5h-mph"/>
+                            <constraint firstItem="iXb-IZ-GJA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iJw-PM-dSS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zpd-K2-7io"/>
                     <connections>
@@ -72,9 +77,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pOX-2C-IsO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pOX-2C-IsO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="bUb-ep-SSY" style="IBUITableViewCellStyleDefault" id="3P6-xg-KnY">
@@ -102,6 +106,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pOX-2C-IsO" firstAttribute="top" secondItem="h7g-qG-kQv" secondAttribute="bottom" id="I6P-GQ-0GX"/>
+                            <constraint firstAttribute="trailing" secondItem="pOX-2C-IsO" secondAttribute="trailing" id="dTn-F7-fLZ"/>
+                            <constraint firstItem="pOX-2C-IsO" firstAttribute="leading" secondItem="IjD-Si-cum" secondAttribute="leading" id="jR7-Ds-Bho"/>
+                            <constraint firstItem="S8z-2d-SwV" firstAttribute="top" secondItem="pOX-2C-IsO" secondAttribute="bottom" id="w7H-LF-ikL"/>
+                        </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
