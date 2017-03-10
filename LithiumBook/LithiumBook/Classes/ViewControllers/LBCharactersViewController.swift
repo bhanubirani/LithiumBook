@@ -45,17 +45,24 @@ extension LBCharactersViewController: UITableViewDelegate, UITableViewDataSource
         if (charName != nil) {
             cell!.textLabel!.text = charName as! String?
         } else {
-            cell!.textLabel!.text = "Loading.."
+            cell!.textLabel!.text = "Loading..."
             
-            NetworkWrapper.sharedInstance.getCharacters(id: "\(index)", onSuccess: { (array) in
+            let url: String = (bookObject.characters?[index])!
+            let id = url.components(separatedBy: "/").last!
+            
+            NetworkWrapper.sharedInstance.getCharacters(id: "\(id)", onSuccess: { (array) in
                 
-                let _json = JSON(array).dictionaryObject
-                let authorN = _json?["name"] as? String
-                self.charNames["\(index)"] = authorN
-                cell?.textLabel?.text = authorN
-                
+                DispatchQueue.main.async {
+                    let _json = JSON(array).dictionaryObject
+                    let authorN = _json?["name"] as? String
+                    self.charNames["\(index)"] = authorN
+                    cell?.textLabel?.text = authorN
+                }
             }, onFailure: { (error) in
-                print("error in getting character name")
+                DispatchQueue.main.async {
+                    print("error in getting character name")
+                    cell?.textLabel?.text = "Error"
+                }
             })
         }
         return cell!

@@ -30,7 +30,7 @@ class NetworkWrapper {
     ///   - onSuccess: success callback
     ///   - onFailure: failure callback
     func getFeeds(onSuccess: @escaping (Any)->(),
-                  onFailure: (NSError)->()) {
+                  onFailure: @escaping (Error)->()) {
         
         let _url: URLRequestConvertible = LBRequestRouter.Router.getBooks
         restClient.makeRequest(url: _url, onSuccess: onSuccess, onFailure: onFailure)
@@ -38,7 +38,8 @@ class NetworkWrapper {
     
     func getCharacters(id: String,
                        onSuccess: @escaping (Any)->(),
-                       onFailure: (NSError)->()) {
+                       onFailure: @escaping (Error)->()) {
+        print(id)
         let _url: URLRequestConvertible = LBRequestRouter.Router.getBookDetails(id: id)
         restClient.makeRequest(url: _url, onSuccess: onSuccess, onFailure: onFailure)
     }
@@ -51,7 +52,7 @@ fileprivate class RestClient {
     
     public func makeRequest(url: URLRequestConvertible,
                             onSuccess: @escaping (Any) -> (),
-                            onFailure: (NSError) -> ()
+                            onFailure: @escaping (Error) -> ()
         ) -> Void {
         
         Alamofire.request(url)
@@ -74,7 +75,8 @@ fileprivate class RestClient {
                     }
                     break
                 case .failure:
-                    print("failure \(response)")
+                    print("failure \(response.result.error)")
+                    onFailure(response.result.error!)
                     break
                 }
                 
