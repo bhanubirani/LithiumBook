@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ObjectMapper
+import SwiftyJSON
 
 private let _sharedInstance = LBBookListInteractor()
 
@@ -18,5 +20,26 @@ public class LBBookListInteractor {
         return _sharedInstance
     }
     
+    fileprivate let networkWrapper = NetworkWrapper.sharedInstance
+    fileprivate var booksArray = [LBBookObject]()
+    
+    public func fetchBooks() {
+        networkWrapper.getFeeds(onSuccess: { (array) in
+            
+            let _json = JSON(array)
+            let _books = _json.arrayObject
+            
+            for lbook in _books! {
+                guard let _tmpBooks = Mapper<LBBookObject>().map(JSONObject: lbook) else {
+                    continue;
+                }
+                print(_tmpBooks.name ?? "ERROR")
+                self.booksArray.append(_tmpBooks)
+            }
+            
+        }, onFailure: { (error) in
+            print("get feeds")
+        })
+    }
     
 }
