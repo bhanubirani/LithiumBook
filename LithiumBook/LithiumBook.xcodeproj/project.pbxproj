@@ -12,9 +12,14 @@
 		D07FB7241E728086002CED7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7221E728086002CED7B /* Main.storyboard */; };
 		D07FB7261E728086002CED7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7251E728086002CED7B /* Assets.xcassets */; };
 		D07FB7291E728086002CED7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07FB7271E728086002CED7B /* LaunchScreen.storyboard */; };
+		D07FB7311E728132002CED7B /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07FB7301E728132002CED7B /* NetworkWrapper.swift */; };
+		D10E7AC7A5412216D9058FD6 /* Pods_LithiumBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6087150411A4A901186BDE1D /* Pods_LithiumBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6087150411A4A901186BDE1D /* Pods_LithiumBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LithiumBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EBB31AD9842FE2775A75A7 /* Pods-LithiumBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LithiumBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook.release.xcconfig"; sourceTree = "<group>"; };
+		A0C95E6FFA2A792FDE9F5ED2 /* Pods-LithiumBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LithiumBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook.debug.xcconfig"; sourceTree = "<group>"; };
 		D07FB71B1E728086002CED7B /* LithiumBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LithiumBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07FB71E1E728086002CED7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07FB7201E728086002CED7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D07FB7251E728086002CED7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07FB7281E728086002CED7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07FB72A1E728086002CED7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07FB7301E728132002CED7B /* NetworkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10E7AC7A5412216D9058FD6 /* Pods_LithiumBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				D07FB71D1E728086002CED7B /* LithiumBook */,
 				D07FB71C1E728086002CED7B /* Products */,
+				D8D47EFB729FC9AF68C5D50D /* Pods */,
+				D45C90561D89783ABD944E8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		D07FB71D1E728086002CED7B /* LithiumBook */ = {
 			isa = PBXGroup;
 			children = (
+				D07FB7301E728132002CED7B /* NetworkWrapper.swift */,
 				D07FB71E1E728086002CED7B /* AppDelegate.swift */,
 				D07FB7201E728086002CED7B /* ViewController.swift */,
 				D07FB7221E728086002CED7B /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = LithiumBook;
 			sourceTree = "<group>";
 		};
+		D45C90561D89783ABD944E8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6087150411A4A901186BDE1D /* Pods_LithiumBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D47EFB729FC9AF68C5D50D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C95E6FFA2A792FDE9F5ED2 /* Pods-LithiumBook.debug.xcconfig */,
+				84EBB31AD9842FE2775A75A7 /* Pods-LithiumBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07FB72D1E728086002CED7B /* Build configuration list for PBXNativeTarget "LithiumBook" */;
 			buildPhases = (
+				7F0A02BB02DBF7091D1669B4 /* [CP] Check Pods Manifest.lock */,
 				D07FB7171E728086002CED7B /* Sources */,
 				D07FB7181E728086002CED7B /* Frameworks */,
 				D07FB7191E728086002CED7B /* Resources */,
+				C0D35C3393AB114A8D780EFD /* [CP] Embed Pods Frameworks */,
+				F98E1D16D2F8F88182CD8835 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F0A02BB02DBF7091D1669B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D35C3393AB114A8D780EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98E1D16D2F8F88182CD8835 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LithiumBook/Pods-LithiumBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D07FB7171E728086002CED7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D07FB7211E728086002CED7B /* ViewController.swift in Sources */,
+				D07FB7311E728132002CED7B /* NetworkWrapper.swift in Sources */,
 				D07FB71F1E728086002CED7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +335,7 @@
 		};
 		D07FB72E1E728086002CED7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C95E6FFA2A792FDE9F5ED2 /* Pods-LithiumBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LithiumBook/Info.plist;
@@ -269,6 +349,7 @@
 		};
 		D07FB72F1E728086002CED7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84EBB31AD9842FE2775A75A7 /* Pods-LithiumBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LithiumBook/Info.plist;
